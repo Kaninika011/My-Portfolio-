@@ -1,5 +1,6 @@
 # My Portfolio
-![Screenshot 2024-01-15 194939](https://github.com/Kaninika011/My-Portfolio-/assets/74821776/5918326b-70ae-4f99-8ef7-4b96fbea373e)
+![Screenshot 2024-01-15 195205](https://github.com/Kaninika011/My-Portfolio-/assets/74821776/af39bb96-278a-437d-981c-219800508154)
+
 
 ## Description
 
