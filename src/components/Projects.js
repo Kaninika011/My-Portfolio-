@@ -11,18 +11,18 @@ const Projects =() => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "CRUD Management Tool",
+      description: "React, Node.js, Express",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Netflix-Clone",
+      description: "Next.js, MongoDB, Prisma",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Name-Information-Retrieval-App",
+      description: "Next.js",
       imgUrl: projImg3,
     },
   ];
@@ -40,7 +40,7 @@ return (
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum </p>
+                <p> A selection of my fun projects, each crafted with passion and showcasing a variety of tech stacks </p>
          <Tabs justify variant="pills" defaultActiveKey= "tab-1" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
           <Tab eventKey= "tab-1" title ="Tab1">
           <Row id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
