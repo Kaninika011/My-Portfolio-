@@ -4,8 +4,9 @@ import { useState, useEffect } from 'react';
 import logo from '../assets/images/logo.png';
 import navIcon1 from '../assets/images/nav-icon1.svg';
 import navIcon2 from '../assets/images/nav-icon2.svg';
-//import navIcon3 from '../assets/images/nav-icon3.svg';
-//import { HashLink } from 'react-router-hash-link';
+import navIcon3 from '../assets/images/nav-icon3.svg';
+import { HashLink } from 'react-router-hash-link';
+import {BrowserRouter as Router} from "react-router-dom";
 
     const NavBar = () => {
         const [activeLink, setActiveLink] = useState('home');
@@ -30,9 +31,10 @@ import navIcon2 from '../assets/images/nav-icon2.svg';
 
 
  return (
+  <Router>
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
             <img className='logo' src={logo} alt = "Logo"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" > 
@@ -49,15 +51,16 @@ import navIcon2 from '../assets/images/nav-icon2.svg';
             <div className='social-icon'>
                 <a href='https://www.linkedin.com/in/kaninika-sen-choudhuri-2a6b101b7/'> <img src ={navIcon1} alt=""/> </a>
                 <a href='https://github.com/Kaninika011'> <img src ={navIcon2} alt=""/> </a>
-                
+                <a href='https://www.instagram.com/_kaninika_'> <img src ={navIcon3} alt=""/> </a>
             </div>
-            <button className='vvd' onClick= {() => console.log('Connect')}>
-              <span> Contact</span>
-            </button>
-          </span>
+            <HashLink to='#connect'>
+                <button className="vvd"><span>Let’s Connect</span></button>
+              </HashLink>
+              </span>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </Router>
   );
     };
   export default NavBar
