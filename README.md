@@ -4,11 +4,7 @@
 
 ## Description
 
-This is my personal portfolio website built with React.js.
-
-#Deployed on Vercel
-
-https://my-portfolio-alpha-silk.vercel.app/
+This is my personal portfolio website built with React.js and deployed on Vercel. https://my-portfolio-alpha-silk.vercel.app/
 
 
 
