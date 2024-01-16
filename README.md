@@ -6,7 +6,7 @@
 
 This is my personal portfolio website built with React.js.
 
-#Vercel_Link 
+#Deployed on Vercel
 
 https://my-portfolio-alpha-silk.vercel.app/
 
