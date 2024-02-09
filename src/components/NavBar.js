@@ -7,6 +7,7 @@ import navIcon2 from '../assets/images/nav-icon2.svg';
 import navIcon3 from '../assets/images/nav-icon3.svg';
 import { HashLink } from 'react-router-hash-link';
 import {BrowserRouter as Router} from "react-router-dom";
+import { Link } from 'react-router-dom';
 
     const NavBar = () => {
         const [activeLink, setActiveLink] = useState('home');
@@ -45,7 +46,6 @@ import {BrowserRouter as Router} from "react-router-dom";
             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}onClick ={() => onUpdateActiveLink('home')}>Home</Nav.Link>
             <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick ={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
             <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick ={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-            
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
